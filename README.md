@@ -43,11 +43,16 @@ sonomad6
 lcd ~/IMAGE
 cd public_html/sebartsvirtual/wp-content/uploads/img
 prompt
-mput *.psd
+mput *.jpg
 ```
-Convert all files to .jpg at host.
+#### Convert all files to .jpg at host.
+For example:
+
+bluehost > Advanced > Image > Convert
 
 ### Artwork/Product Registration and/or Upload
 Upload from Google Sheet.
 
 http://www.evelindi.com/
+
+:art:

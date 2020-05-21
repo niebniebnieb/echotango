@@ -1,4 +1,4 @@
-# Virtual Gallery
+# Virtual Gallery - :art:
 ### Features
 * Artists' registration with optional registration fee.
 * Artists' Info Upload

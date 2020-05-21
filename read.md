@@ -8,4 +8,4 @@
 * Gallery Images Upload
     * Artwork Info (price, dimensions)
 * Shopping Cart and eCommerce Payment
-* Unlimited number of artists and artworks. 
+* Unlimited number of artists and artworks.    

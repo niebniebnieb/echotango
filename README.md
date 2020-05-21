@@ -12,14 +12,14 @@
 
 ### Installation
 Install and active there free Wordpress plugins:
-Advanced Custom Fields
-Contact Form 7
-Custom Post Type UI
-Post My CF7 Form
-WooCommerce
-WooCommerce Services
-WooCommerce Stripe Gateway
-Wordpress File Upload
+* Advanced Custom Fields
+* Contact Form 7
+* Custom Post Type UI
+* Post My CF7 Form
+* WooCommerce
+* WooCommerce Services
+* WooCommerce Stripe Gateway
+* Wordpress File Upload
 
 ### Artist Registration and/or Upload
 Headshot file format:
@@ -27,6 +27,9 @@ lastname-firstname-head.jpg or .tif ...
 
 Featured Image file format:
 lastname-firstname-art.jpg or .tif ...
+
+run rename.py
+Convert all files to .jpg at host.
 
 ### Artwork/Product Registration and/or Upload
 Upload from Google Sheet.

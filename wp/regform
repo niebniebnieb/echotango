@@ -1,0 +1,144 @@
+If you are already enrolled in Art at the Source 2020, select <strong>Update</strong>.
+If you are already enrolled as a returning Art Trails 2020 artist, select <strong>Update</strong>.
+If you have participated in Art at the Source or Art Trails in previous years, but have <em><strong>not</strong></em> already registered for 2020, select <strong>Returning</strong>.  
+If you have never participated in either program, select <strong>New</strong>.
+[select* new_or_ret first_as_label "-- Choose Update, Returning, or New --" "Update" "Returning" "New" ]
+
+[group new-only]
+<strong>New Artists:</strong> To upload your additional artwork images, and your Artist Statement and Resume, please <strong><a href="https://www.jotform.com/sebarts/2020SAVOS-Images" target="_blank">click here.</a></strong> You will be taken to an image upload form to complete this step in a new browser window. When your uploads are complete, close that window and return to this page to complete your registration form and payment.
+[/group]
+
+[group update]
+We will use the artwork image you have already provided. Please upload only your Personal Photo.
+Filename must be: last-first-head.png or .jpg ... All lower case a-z only
+Click <strong>[Select File]</strong>
+[wordpress_file_upload widths="filename:450px" uploadtitle=""]
+[/group]
+
+[group new-selected]
+Please upload your Featured Artwork.
+Filename must be: last-first-art.png or .jpg ... All lower case a-z only
+Then repeat to upload your Personal Photo. Filename must be: last-first-head.png or .jpg ...
+Click <strong>[Select File]</strong>
+[wordpress_file_upload widths="filename:450px" uploadtitle=""]
+[/group]
+
+<strong>First &amp; Last Name, for internal use only</strong>
+<label>Your First Name<strong style="color: red;">* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*</strong> = required
+    [text* artist_first_name] </label>
+
+<label>Your Last Name <strong style="color: red;">*</strong>
+    [text* artist_last_name] </label>
+
+<strong>Public Profile Name, properly formatted and capitalized, for the program website</strong>
+<label>Public Profile First Name
+    [text public_profile_first_name] </label>
+
+<label>Public Profile Last Name <em>(if you use only one name, please enter it here)</em>
+    [text public_profile_last_name] </label>
+
+If you wish to be listed under a company name instead of your own name, please list it here. Leave blank if not applicable.
+<label>Public Profile Company
+    [text company_name] </label>
+
+<strong>About You and Your Work</strong> <em>Please proofread this information carefully!</em>
+<label>Artist Statement or Bio<strong style="color: red;">*</strong>
+    [textarea* artist_statement] </label>
+
+[group detail]
+<label>Medium <strong style="color: red;">*</strong>
+    [select* medium include_blank "Ceramics" "Digital Art" "Drawing" "Fiber Arts" "Furniture" "Glass" "Jewelry" "Mixed Media" "Painting" "Photography" "Printmaking" "Sculpture" "Woodworking"] </label>
+
+<label>Brief Description<strong style="color: red;">*</strong> <em>(e.g. "Oil on canvas" or "Plein air watercolors, Sonoma landscapes")</em>
+    [text* brief_description] </label>
+
+<strong>Contact Information</strong>
+Please list a year-round address where you can be reached for your art business and for program communications, commission checks, etc. This will be published and remain on the website for collectors to contact you. If you do not wish to publish a mailing address, enter the address for private use only, and click Do Not Publish.
+<label>Mailing Address<strong style="color: red;">*</strong>
+    [text* mailing_address] </label>
+
+<label>Do Not Publish
+    [checkbox do_not_publish_mailing_address "Do Not Publish"] </label>
+
+The email address you would like SebArts to use to contact you with information about the program.
+<label>Email Address<strong style="color: red;">*</strong>
+    [email* email_address] </label>
+
+The email address you would like linked on your public profile. Leave blank if you do not want to share an email address.
+<label>Public Email Address
+    [email public_email] </label>
+
+Phone number you would like SebArts to use to contact you with information about the program.
+<label>Phone Number<strong style="color: red;">*</strong><em> (please enter as (111) 222-3333)</em>
+    [tel* phone_number minlength:14 maxlength:14 placeholder "(111) 222-3333"] </label>
+
+The phone number you would like listed on your public profile. Leave blank if you do not want to share a phone number.
+<label>Public Phone Number <em> (please enter as (111) 222-3333)</em>
+    [tel public_phone minlength:14 maxlength:14 placeholder "(111) 222-3333"] </label>
+[/group]
+
+<strong> Physical Studio Address</strong>
+Please list the address where you will exhibit if in-person visits are possible.<strong> Note: </strong>Studio sharing is permitted for this program. If you are an Art at the Source artist who previously planned to share a studio this year, please confirm your existing arrangements with your host or guest, and then enter your shared studio address below. For more information or assistance with sharing a studio, please <a href="mailto:openstudios@sebarts.org">contact us</a>.
+<label>
+    [map physical_studio_address]</label>
+
+<label><strong> Open Year Round by Appointment </strong><strong style="color: red;">*</strong></label>
+    [radio open_by_appointment "No" "Yes"]
+
+<label><strong> Wheelchair Accessible </strong><strong style="color: red;">*</strong></label>
+    [radio wheelchair_accessible "No" "Yes"]
+
+<strong>Website and Social Media Profiles </strong><em> Please enter the complete URL for your website and social media profiles.</em>
+
+<label>Website URL
+    [url website] </label>
+
+<label>Facebook Page or Profile URL
+    [url facebook_page_] </label>
+
+<label>Instagram Profile URL
+    [url instagram_] </label>
+
+<label>Twitter Profile URL
+    [url twitter_] </label>
+
+<label>Youtube Channel URL
+    [url youtube] </label>
+
+If you have a high quality promotional video of you performing a demo or talking about your work, please share the URL here.
+<label>Promotional or Demo Video URL
+    [url promotional_video] </label>
+
+<label><strong> Resale License </strong><strong style="color: red;">*</strong></label>
+    [radio resale_license "Yes" "Pending"]
+
+Please select all of the potential online workshops you would be interested in attending or that you believe you will need in order to be successful in this program.
+<label><strong> Skill-Sharing Workshops - To Attend</strong>
+    [checkbox workshops "Creating and managing a Facebook page" 
+"Photographing my artwork" 
+"Hosting an online meeting" 
+"Creating a demo or promotional video" 
+"Making a New Website" 
+"Improving an Existing Website" 
+"Referral to a web designer"] </label>
+
+Please select all of the potential online workshops you would be interested in assisting with.
+<label><strong> Skill-Sharing Workshops - I Can Help With</strong>
+    [checkbox workshops_help "Creating and managing a Facebook page" 
+"Photographing my artwork" 
+"Hosting an online meeting" 
+"Creating a demo or promotional video" 
+"Making a New Website" 
+"Improving an Existing Website" 
+"Referral to a web designer"] </label>
+
+
+I agree to the terms and conditions of the 2020 SebArts Virtual Open Studios – Best of Both program. To review terms and conditions, please <strong><a href="https://sebartsvirtual.org/wp-content/uploads/SAVOS-General-Information-and-Guidelines.pdf" target="_blank">click here.</a></strong>
+
+<label><strong>Agreement to Guidelines </strong><strong style="color: red;">*</strong>
+    [checkbox* agreement_to_guidelines "I Agree"] </label>
+[group coupon]
+<label>Please use the following coupon code for payment to avoid charges: XYZXYZ</label>
+[/group]
+
+[submit "Send"]

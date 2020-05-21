@@ -28,7 +28,23 @@ lastname-firstname-head.jpg or .tif ...
 Featured Image file format:
 lastname-firstname-art.jpg or .tif ...
 
-run rename.py
+Clean most file names:
+```
+python rename.py
+```
+#### Upload Images to Server
+For example:
+
+```
+ftp
+open ftp.sonomacountyarttrails.org
+sonomad6
+<password>
+lcd ~/IMAGE
+cd public_html/sebartsvirtual/wp-content/uploads/img
+prompt
+mput *.psd
+```
 Convert all files to .jpg at host.
 
 ### Artwork/Product Registration and/or Upload

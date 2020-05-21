@@ -1,4 +1,8 @@
 import os
+# This program in an attempt to correct many naming mistakes
+# of headshot and featured artwork images
+# The file naming convention is described in README.doc
+
 dirr = "/Users/thomasnieborowski/Desktop/SAVOS/IMAGE"
 for file in os.listdir(dirr):
     org = os.path.join(dirr, file)

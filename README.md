@@ -1,4 +1,4 @@
-# Virtual Gallery - :art:
+# Virtual Gallery     :art:
 ### Features
 * Artists' registration with optional registration fee.
 * Artists' Info Upload
@@ -45,6 +45,8 @@ cd public_html/sebartsvirtual/wp-content/uploads/img
 prompt
 mput *.jpg
 ```
+alternatively use a webdisk.
+
 #### Convert all files to .jpg at host.
 For example:
 
@@ -55,4 +57,4 @@ Upload from Google Sheet.
 
 http://www.evelindi.com/
 
-:art:
+

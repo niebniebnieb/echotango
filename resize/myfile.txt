@@ -1,2 +1,0 @@
-Pablo Picasso,Great Artist,Dream.jpeg,20,30,Dream
-Leonardo da Vinci,Yet Another Great Artist,MonaLisa.jpeg,40,50,Mona Lisa

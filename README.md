@@ -22,38 +22,29 @@ Install and active there free Wordpress plugins:
 * Wordpress File Upload
 
 ### Artist Registration and/or Upload
+####1.) Admin Cleans Most Legacy Image File Names
+
 Headshot file format:
 lastname-firstname-head.jpg or .tif ...
 
 Featured Image file format:
 lastname-firstname-art.jpg or .tif ...
-
-Clean most file names:
 ```
 python rename.py
 ```
-#### Upload Images to Server
-For example:
+Some files names have to be cleaned manually.
+####2.) Admin Upload Legacy Images Files to Server
+Dashboard > Media > Add New > Select Files > Upload
 
-```
-ftp
-open ftp.sonomacountyarttrails.org
-sonomad6
-<password>
-lcd ~/IMAGE
-cd public_html/sebartsvirtual/wp-content/uploads/img
-prompt
-mput *.jpg
-```
-alternatively use a webdisk.
+####3.) Artist Registers via Form
+Can be via UPDATE or NEW
 
-#### Convert all files to .jpg at host.
-For example:
-
-bluehost > Advanced > Image > Convert
+####4.) Admin Links Images to Artists
+Run update_artists.sql
 
 ### Artwork/Product Registration and/or Upload
-Upload from Google Sheet.
+Plan A: Gravity Forms + Custom Post Type?
+Plan B: Upload from Google Sheet.
 
 http://www.evelindi.com/
 

@@ -3,10 +3,13 @@ from PIL import Image
 from psd_tools import PSDImage
 
 # OK after conversion to ASCII:
-test = False
-if test:
+mode = 'ADD'
+if mode == 'TEST':
     in_dir = "./in_img"
     out_dir = "./out_img"
+elif mode == 'ADD':
+    in_dir = "/Users/thomasnieborowski/Desktop/SAVOS/ADD_IN_IMG"
+    out_dir = "/Users/thomasnieborowski/Desktop/SAVOS/OUT_IMG"
 else:
     in_dir = "/Users/thomasnieborowski/Desktop/SAVOS/IN_IMG"
     out_dir = "/Users/thomasnieborowski/Desktop/SAVOS/OUT_IMG"

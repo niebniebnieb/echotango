@@ -8,6 +8,6 @@ If you have participated in Art at the Source or Art Trails in previous years, b
 For your Featured Artwork Image, filename must be: <strong>lastname-firstname-art.png or .jpg</strong> … All lower case a-z only.
 For your Personal Photo, filename must be: <strong>lastname-firstname-head.png or .jpg</strong> … All lower case a-z only.
 
-Click <strong>[Select File]</strong>, then navigate to the file location on your device. Choose the file, then click <strong>[Upload File]</strong>. If you are providing two images, you will use the same field for both of them.
-[wordpress_file_upload widths="filename:450px" uploadtitle=""]
+Click <strong>[Select File]</strong>, then navigate to the file location on your device. Choose the file, then click <strong>[Upload File]</strong>. If you are providing both a Featured Artwork Image and a Personal Photo, you will use the same field for both of them.
+[wordpress_file_upload uploadpath="uploads/img" widths="filename:450px" uploadtitle=""]
 [cf7form cf7key="regform"]

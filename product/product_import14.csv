@@ -1,0 +1,14 @@
+id,first,last,name,description,weight,width,height,length,price,images,tag_ids,category_ids,featured,
+savosartist-registration,savos,Artist,Registration,Artists' Registration,,,,,350,http://sebartsvirtual.org/wp-content/uploads/2020/05/savosartist-registration.png,,,,
+sallybaker-water-color1,Sally,Baker,Water Color1,Water Color Description 1,,,,,1100,http://sebartsvirtual.org/wp-content/uploads/2020/05/sallybaker-water-color1.png,"tag-sb-11,tag-sb-11",Sally Baker,1,1
+sallybaker-still-life,Sally,Baker,Still Life,Water Color Description 2,,,,,1200,http://sebartsvirtual.org/wp-content/uploads/2020/05/sallybaker-still-life.png,"tag-sb-21,tag-sb-21",Sally Baker,0,2
+sallybaker-asian-influence,Sally,Baker,Asian Influence,Water Color Description 3,,,,,1300,http://sebartsvirtual.org/wp-content/uploads/2020/05/sallybaker-asian-influence.png,"tag-sb-31,tag-sb-31",Sally Baker,0,3
+sallybaker-water-color2,Sally,Baker,Water Color2,Water Color Description 4,,,,,1400,http://sebartsvirtual.org/wp-content/uploads/2020/05/sallybaker-water-color2.png,"tag-sb-41,tag-sb-41",Sally Baker,0,4
+sallybaker-sun-drenched-solitude-3,Sally,Baker,Sun Drenched Solitude 3,Water Color Description 5,,,,,1500,http://sebartsvirtual.org/wp-content/uploads/2020/05/sallybaker-sun-drenched-solitude-3.png,"tag-sb-51,tag-sb-51",Sally Baker,0,5
+sallybaker-sun-drenched-solitude,Sally,Baker,Sun Drenched Solitude,Water Color Description 6,,,,,1600,http://sebartsvirtual.org/wp-content/uploads/2020/05/sallybaker-sun-drenched-solitude.png,"tag-sb-61,tag-sb-61",Sally Baker,0,6
+valerieadams-fused-glass1,Valerie,Adams,Fused Glass1,Fused Description 1,,,,,2100,http://sebartsvirtual.org/wp-content/uploads/2020/05/valerieadams-fused-glass1.png,"tag-va-11,tag-va-11",Valerie Adams,1,1
+valerieadams-fused-glass2,Valerie,Adams,Fused Glass2,Fused Description 2,,,,,2200,http://sebartsvirtual.org/wp-content/uploads/2020/05/valerieadams-fused-glass2.png,"tag-va-21,tag-va-21",Valerie Adams,0,2
+valerieadams-fused-glass3,Valerie,Adams,Fused Glass3,Fused Description 3,,,,,2300,http://sebartsvirtual.org/wp-content/uploads/2020/05/valerieadams-fused-glass3.png,"tag-va-31,tag-va-31",Valerie Adams,0,3
+valerieadams-fused-glass4,Valerie,Adams,Fused Glass4,Fused Description 4,,,,,2400,http://sebartsvirtual.org/wp-content/uploads/2020/05/valerieadams-fused-glass4.png,"tag-va-41,tag-va-41",Valerie Adams,0,4
+valerieadams-fused-glass5,Valerie,Adams,Fused Glass5,Fused Description 5,,,,,2500,http://sebartsvirtual.org/wp-content/uploads/2020/05/valerieadams-fused-glass5.png,"tag-va-51,tag-va-51",Valerie Adams,0,5
+valerieadams-fused-glass6,Valerie,Adams,Fused Glass6,Fused Description 6,,,,,2600,http://sebartsvirtual.org/wp-content/uploads/2020/05/valerieadams-fused-glass6.png,"tag-va-61,tag-va-61",Valerie Adams,0,6

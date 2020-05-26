@@ -9,7 +9,7 @@ if mode == 'TEST':
     out_dir = "./out_img"
 elif mode == 'ADD':
     in_dir = "/Users/thomasnieborowski/Desktop/SAVOS/ADD_IN_IMG"
-    out_dir = "/Users/thomasnieborowski/Desktop/SAVOS/OUT_IMG"
+    out_dir = "/Users/thomasnieborowski/Desktop/SAVOS/ADD_OUT_IMG"
 else:
     in_dir = "/Users/thomasnieborowski/Desktop/SAVOS/IN_IMG"
     out_dir = "/Users/thomasnieborowski/Desktop/SAVOS/OUT_IMG"
@@ -17,6 +17,8 @@ else:
 QUALITY = 50
 IM_SIZE = 800
 
+for ff in os.scandir(out_dir):
+    os.remove(ff.path)
 for file in os.listdir(in_dir):
     org = os.path.join(in_dir, file)
     new_path = os.path.join(out_dir, file)
@@ -55,4 +57,6 @@ for file in os.listdir(in_dir):
         im.save(ff, quality=QUALITY)
         os.remove(png)
         continue
+for fff in os.scandir(in_dir):
+    os.remove(fff.path)
 print('END')

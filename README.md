@@ -83,7 +83,6 @@ Files go to ADD_OUT_IMG
 #### 3.) Admin Imports Images to Media Library
 As above but from ADD_OUT_IMG dir.
 Delete files from uploads/img
-Delete files from ADD_IN_IMG
 
 #### 4.) Admin Links Artist Media Library Image
 For every artist - TODO: do bulk for all unlinked artists

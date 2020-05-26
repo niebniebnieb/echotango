@@ -5,9 +5,9 @@
 -- (Implement either with sproc after character set fix or generate statements below from csv via Python.)
 
 -- Link given artist with artist's featured image
-SET @first = 'lucy';
-SET @last = 'liew';
-SET @art_or_head = 'art'; -- TODO Repeat INSERT with art -> 'head' if supplied.
+SET @first = 'luann';
+SET @last = 'udell';
+SET @art_or_head = 'head'; -- TODO Repeat INSERT with art -> 'head' if supplied.
 
 INSERT INTO 4BS_postmeta (post_id, meta_key, meta_value) VALUES ( -- artist, 'featured_artwork', media image
     (SELECT t3.ID
@@ -31,7 +31,6 @@ INSERT INTO 4BS_postmeta (post_id, meta_key, meta_value) VALUES ( -- artist, 'fe
         ) as t4
     WHERE t3.ID = t4.ID
     ),
-    -- @featured,
     IF(@art_or_head = 'art', 'featured_artwork', 'headshot'),
     (SELECT ID FROM 4BS_posts WHERE post_name =
         (SELECT CONCAT( @last, '-', @first, '-', @art_or_head))

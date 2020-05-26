@@ -21,12 +21,35 @@ Install and active there free Wordpress plugins:
 * WooCommerce Stripe Gateway
 * Wordpress File Upload
 
+1.) Pincode -> Zipcode in
+```
+wp-content/plugins/cf7-google-map/public/partials/cf7-googlemap.php
+```
+2.) For new Artist to be live instead of "Draft" edit 
+	- wp-content/themes/astra/functions.php
+```
+add_filter('cf7_2_post_status_artists', 'publish_by_default', 10,1);
+function publish_by_default($status){
+  return 'publish';
+}
+```
+3.) To increase contrast in Registration Form:
+Append to: wp-content/plugins/contact-form-7/includes/css/styles.css (requires restart?)
+```
+.wpcf7
+{
+ background-color: #ddd;
+ border: 20px solid #ddd;
+}
+```
+
+
 ### Image File Format
-Headshot file format:
+Headshot:
 ```
 lastname-firstname-head.jpg or .tif or .psd ...
 ```
-Featured Image file format:
+Featured Image:
 ```
 lastname-firstname-art.jpg or .tif or .psd ...
 ```
@@ -59,12 +82,18 @@ python to-jpg.py # in ADD mode
 Files go to ADD_OUT_IMG
 #### 3.) Admin Imports Images to Media Library
 As above but from ADD_OUT_IMG dir.
+Delete files from uploads/img
+Delete files from ADD_IN_IMG
 
+#### 4.) Admin Links Artist Media Library Image
+For every artist - TODO: do bulk for all unlinked artists
+```
+python update_artist
+```
 
-
-### Artwork/Product Registration and/or Upload
-Plan A: Gravity Forms + Custom Post Type?
-Plan B: Upload from Google Sheet.
+### Artwork/Product Registration
+Gravity Forms + Custom Post Type
+Alt: Upload from Google Sheet.
 
 http://www.evelindi.com/
 

@@ -1,13 +1,13 @@
 # Virtual Gallery     :art:
 ### Features
-* Artists' registration with optional registration fee.
-* Artists' Info Upload
+* Artists' Registration with Optional Registration Fee
+* Artists' Profile + Upload
     * Headshot
     * Featured Image
     * Contact Info
-* Gallery Images Upload
+* Gallery Images + Upload
     * Artwork Info (price, dimensions)
-* Bulk Image File Resizing
+* Bulk Image File Resizing and Compression
 * Shopping Cart and eCommerce Payment
 * Unlimited number of artists and artworks.
 

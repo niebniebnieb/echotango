@@ -63,15 +63,27 @@ lastname-firstname-art.jpg or .tif or .psd ...
 ```
 python rename.py
 ```
+rename files to IN_IMG
+#### 2.) Admin Resizes Images
+Resies files in IN_IMG by running
+```
+python to-jpg.py # in ADD mode
+```
+Files go to OUT_IMG
 Some files names have to be cleaned manually.
-#### 2.) Admin Upload Legacy Images Files to Media Library
-Dashboard > Media > Add New > Select Files > Upload
+#### 3.) Admin Upload Legacy Images Files to Media Library
+Dashboard > Media > Add New > Select Files > OUT_IMG > Upload
 
-#### 3.) Artist Registers via Form
+#### 4.) Artist Registers via Form
 Can be via UPDATE or NEW
 
-#### 4.) Admin Links Images to Artists
-Run update_artists.sql
+#### 5.) Admin Links Artist to Media Library Image
+For every artist who registered, set artist name and run for featured artwork and headshot if supplied.
+Can also do: Dashboard > Artists > <artist> > Featured Image > Search > ...
+
+```
+update_artists.sql
+```
 
 ### New Artist Image Upload
 #### 1.) Artist uses Registration Page to Upload Images
@@ -87,8 +99,10 @@ Files go to ADD_OUT_IMG
 As above but from ADD_OUT_IMG dir.
 Delete files from uploads/img
 
-#### 4.) Admin Links Artist Media Library Image
-For every artist - TODO: do bulk for all unlinked artists
+#### 4.) Admin Links Artist to Media Library Image
+For every artist who registered, set artist name and run for featured artwork and headshot if supplied.
+Can also do: Dashboard > Artists > <artist> > Featured Image > Search > ...
+(same as 5. above)
 ```
 python update_artist
 ```

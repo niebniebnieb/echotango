@@ -7,6 +7,7 @@
     * Contact Info
 * Gallery Images Upload
     * Artwork Info (price, dimensions)
+* Bulk Image File Resizing
 * Shopping Cart and eCommerce Payment
 * Unlimited number of artists and artworks.
 
@@ -21,11 +22,13 @@ Install and active there free Wordpress plugins:
 * WooCommerce Stripe Gateway
 * Wordpress File Upload
 
-1.) Pincode -> Zipcode in
+#### 1.) Pincode -> Zipcode
+edit
 ```
 wp-content/plugins/cf7-google-map/public/partials/cf7-googlemap.php
 ```
-2.) For new Artist to be live instead of "Draft" edit 
+#### 2.) Artist to be "Published" instead of "Draft"
+edit 
 	- wp-content/themes/astra/functions.php
 ```
 add_filter('cf7_2_post_status_artists', 'publish_by_default', 10,1);
@@ -33,7 +36,7 @@ function publish_by_default($status){
   return 'publish';
 }
 ```
-3.) To increase contrast in Registration Form:
+#### 3.) To increase contrast in Registration Form
 Append to: wp-content/plugins/contact-form-7/includes/css/styles.css (requires restart?)
 ```
 .wpcf7

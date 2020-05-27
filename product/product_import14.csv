@@ -1,5 +1,4 @@
 id,first,last,name,description,weight,width,height,length,price,images,tag_ids,category_ids,featured,
-savosartist-registration,savos,Artist,Registration,Artists' Registration,,,,,350,http://sebartsvirtual.org/wp-content/uploads/2020/05/savosartist-registration.png,,,,
 sallybaker-water-color1,Sally,Baker,Water Color1,Water Color Description 1,,,,,1100,http://sebartsvirtual.org/wp-content/uploads/2020/05/sallybaker-water-color1.png,"tag-sb-11,tag-sb-11",Sally Baker,1,1
 sallybaker-still-life,Sally,Baker,Still Life,Water Color Description 2,,,,,1200,http://sebartsvirtual.org/wp-content/uploads/2020/05/sallybaker-still-life.png,"tag-sb-21,tag-sb-21",Sally Baker,0,2
 sallybaker-asian-influence,Sally,Baker,Asian Influence,Water Color Description 3,,,,,1300,http://sebartsvirtual.org/wp-content/uploads/2020/05/sallybaker-asian-influence.png,"tag-sb-31,tag-sb-31",Sally Baker,0,3

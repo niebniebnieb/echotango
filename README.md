@@ -27,7 +27,7 @@ edit
 ```
 wp-content/plugins/cf7-google-map/public/partials/cf7-googlemap.php
 ```
-#### 2.) Artist to be "Published" instead of "Draft"
+#### 2.) Set Artists to "Published" instead of "Draft"
 edit 
 	- wp-content/themes/astra/functions.php
 ```
@@ -63,14 +63,14 @@ lastname-firstname-art.jpg or .tif or .psd ...
 ```
 python rename.py
 ```
-rename files to IN_IMG
+renamed files to IN_IMG
 #### 2.) Admin Resizes Images
-Resies files in IN_IMG by running
+Resize files in IN_IMG by running
 ```
 python to-jpg.py # in ADD mode
 ```
 Files go to OUT_IMG
-Some files names have to be cleaned manually.
+Some file names have to be cleaned manually.
 #### 3.) Admin Upload Legacy Images Files to Media Library
 Dashboard > Media > Add New > Select Files > OUT_IMG > Upload
 

@@ -17,46 +17,40 @@ else:
 QUALITY = 50
 IM_SIZE = 800
 
-for ff in os.scandir(out_dir):
-    os.remove(ff.path)
+for oldfile in os.scandir(out_dir):
+    os.remove(oldfile.path)
+
 for file in os.listdir(in_dir):
     org = os.path.join(in_dir, file)
     new_path = os.path.join(out_dir, file)
     if file.endswith('.jpeg'):
-        ff = new_path.replace('.jpeg', '.jpg')
+        newpath = new_path.replace('.jpeg', '.jpg')
         im = Image.open(org)
-        im.thumbnail((IM_SIZE,IM_SIZE))
-        im.save(ff, quality=QUALITY)
-        continue
-    if file.endswith('.jpg'):
+    elif file.endswith('.jpg'):
         im = Image.open(org)
-        im.thumbnail((IM_SIZE,IM_SIZE))
-        im.save(new_path, quality=QUALITY)
-        continue
-    if file.endswith('.png'):
-        ff = new_path.replace('.png', '.jpg')
-        im = Image.open(org)
-        im.thumbnail((IM_SIZE,IM_SIZE))
-        im = im.convert('RGB')
-        im.save(ff, quality=QUALITY)
-        continue
-    if file.endswith('.tif'):
-        ff = new_path.replace('.tif', '.jpg')
+        newpath = new_path
+    elif file.endswith('.png'):
+        newpath = new_path.replace('.png', '.jpg')
         im = Image.open(org)
         im = im.convert('RGB')
-        im.thumbnail((IM_SIZE,IM_SIZE))
-        im.save(ff, "JPEG", quality=QUALITY)
-        continue
-    if file.endswith('.psd'):
+    elif file.endswith('.tif'):
+        newpath = new_path.replace('.tif', '.jpg')
+        im = Image.open(org)
+        im = im.convert('RGB')
+    elif file.endswith('.psd'):
         png = org.replace('.psd', '.png')
         os.system('psd-tools convert '+org+' '+png)
-        ff = new_path.replace('.psd', '.jpg')
+        newpath = new_path.replace('.psd', '.jpg')
         im = Image.open(png)
         im = im.convert('RGB')
-        im.thumbnail((IM_SIZE,IM_SIZE))
-        im.save(ff, quality=QUALITY)
         os.remove(png)
+    else:
+        print('ERROR: UNEXPECTED FILE EXTENSION: '+file)
         continue
+    im.thumbnail((IM_SIZE, IM_SIZE))
+    im.save(newpath, quality=QUALITY)
+    print('CONVERTed '+org+' to '+newpath)
+
 for fff in os.scandir(in_dir):
     os.remove(fff.path)
 print('END')

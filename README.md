@@ -88,9 +88,8 @@ update_artists.sql
 ### New Artist Image Upload
 #### 1.) Artist uses Registration Page to Upload Images
 Files go to upload/img
-#### 2.) Admin Resizes Images
-Downloads files to ADD_IN_IMG
-and runs
+#### 2.) Admin Resizes, Compresses and Converts Images to .jpg
+run:
 ```
 python to-jpg.py # in ADD mode
 ```

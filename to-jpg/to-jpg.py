@@ -6,7 +6,7 @@ from psd_tools import PSDImage
 savos = "/Users/thomasnieborowski/Desktop/SAVOS/"
 remote_img = 'public_html/sebartsvirtual/wp-content/uploads/img'
 
-mode = 'ADD'
+mode = 'ADD' # ADD | TEST | BULK
 if mode == 'TEST':
     in_dir = "./in_img"
     out_dir = "./out_img"
@@ -22,14 +22,14 @@ save_dir = savos + "ORG_ADD_IN_IMG"
 QUALITY = 50
 IM_SIZE = 800
 
-# save originally artist supplied files from previous run.
+# save originally artist supplied files from previous run and clear in_dir.
 for save in os.listdir(in_dir):
     local_filename = os.path.join(in_dir, save)
     os.rename(local_filename, os.path.join(save_dir, save) )
 
 # FTP files to local
 with open(os.path.join(savos, "savospw"), "r") as f1:
-    pw = f1.readline().split('\n')
+    pw = f1.read().replace('\n', '').split(',')
 
 ftp = FTP(pw[0], pw[1], pw[2])
 ftp.cwd(remote_img)
@@ -42,6 +42,13 @@ for f2 in files:
     localf = os.path.join(in_dir, f2)
     with open(localf, 'wb') as f3:
         ftp.retrbinary('RETR '+f2, f3.write)
+
+for f4 in files:
+    if f4 == '.' or f4 == '..':
+        continue
+    ftp.delete(f4)
+    # was sendcmd('DELE "+f4)
+
 ftp.quit()
 
 
@@ -80,6 +87,4 @@ for f4 in os.listdir(in_dir):
     im.save(newpath, quality=QUALITY)
     print('CONVERTed '+org+' to '+newpath)
 
-# for f5 in os.scandir(in_dir):
-#     os.remove(f5.path)
 print('END')

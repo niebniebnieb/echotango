@@ -64,14 +64,14 @@ lastname-firstname-art.jpg or .tif or .psd ...
 ```
 python rename.py
 ```
-renamed files to IN_IMG
+Renamed files go to IN_IMG.
+Some file names have to be cleaned manually.
 #### 2.) Admin Resizes Images
 Resize files in IN_IMG by running
 ```
 python to-jpg.py # in BULK mode
 ```
 Files go to OUT_IMG
-Some file names have to be cleaned manually.
 #### 3.) Admin Upload Legacy Images Files to Media Library
 Dashboard > Media > Add New > Select Files > OUT_IMG > Upload
 
@@ -84,7 +84,8 @@ For every artist who registered, set artist name and run for featured artwork an
 ```
 update_artists.sql
 ```
-Manual alternative: Dashboard > Artists > <artist> > Featured Image > Search > ...
+Manual alternative: Dashboard > Artists > select artist name > Featured Image > Search > ...
+Repeat for Featured Artwork and Headshot if supplied
 
 ### New Artist Featured Artwork and Headshot Upload
 #### 1.) Admin Resizes, Compresses and Converts Images to .jpg
@@ -100,11 +101,12 @@ As above but from ADD_OUT_IMG dir.
 
 #### 3.) Admin Links Artist to Media Library Image
 For every artist who registered, set artist name and run for featured artwork and headshot if supplied.
-Can also do: Dashboard > Artists > <artist> > Featured Image > Search > ...
-(same as 5. above)
 ```
 python update_artist
 ```
+Manual alternative: Dashboard > Artists > select artist name > Featured Image > Search > ...
+Repeat for Featured Artwork and Headshot if supplied
+(same as 5. above)
 
 ### Artwork/Product Registration
 Gravity Forms + Custom Post Type

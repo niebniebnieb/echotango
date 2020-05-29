@@ -1,4 +1,5 @@
 # Virtual Gallery     :art:
+Virtual online Gallery where artists can publish and sell their artworks.
 ### Features
 * Artists' Registration with Optional Registration Fee
 * Artists' Profile + Upload
@@ -67,7 +68,7 @@ renamed files to IN_IMG
 #### 2.) Admin Resizes Images
 Resize files in IN_IMG by running
 ```
-python to-jpg.py # in ADD mode
+python to-jpg.py # in BULK mode
 ```
 Files go to OUT_IMG
 Some file names have to be cleaned manually.
@@ -79,26 +80,25 @@ Can be via UPDATE or NEW
 
 #### 5.) Admin Links Artist to Media Library Image
 For every artist who registered, set artist name and run for featured artwork and headshot if supplied.
-Can also do: Dashboard > Artists > <artist> > Featured Image > Search > ...
 
 ```
 update_artists.sql
 ```
+Manual alternative: Dashboard > Artists > <artist> > Featured Image > Search > ...
 
-### New Artist Image Upload
-#### 1.) Artist uses Registration Page to Upload Images
-Files go to upload/img
-#### 2.) Admin Resizes, Compresses and Converts Images to .jpg
-run:
+### New Artist Featured Artwork and Headshot Upload
+#### 1.) Admin Resizes, Compresses and Converts Images to .jpg
+After on or more artists have uploaded images (to upload/img)
+in the Registration page, the admin resizes and compresses
+them by running:
 ```
 python to-jpg.py # in ADD mode
 ```
 Files go to ADD_OUT_IMG
-#### 3.) Admin Imports Images to Media Library
+#### 2.) Admin Imports Images to Media Library
 As above but from ADD_OUT_IMG dir.
-Delete files from uploads/img
 
-#### 4.) Admin Links Artist to Media Library Image
+#### 3.) Admin Links Artist to Media Library Image
 For every artist who registered, set artist name and run for featured artwork and headshot if supplied.
 Can also do: Dashboard > Artists > <artist> > Featured Image > Search > ...
 (same as 5. above)

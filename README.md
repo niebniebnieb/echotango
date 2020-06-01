@@ -28,14 +28,20 @@ edit
 ```
 wp-content/plugins/cf7-google-map/public/partials/cf7-googlemap.php
 ```
-#### 2.) Set Artists to "Published" instead of "Draft"
+#### 2.) PHP Updates
 edit 
 	- wp-content/themes/astra/functions.php
 ```
+// Publish added artists immediately instead of "Draft"
 add_filter('cf7_2_post_status_artists', 'publish_by_default', 10,1);
 function publish_by_default($status){
   return 'publish';
 }
+
+// Link every product to its artist via prod.post_parent
+add_action( 'elementor/query/prodquery', function( $query ) {
+	$query->set( 'post_parent', get_the_ID() );
+} );
 ```
 #### 3.) To increase contrast in Registration Form
 Append to: wp-content/plugins/contact-form-7/includes/css/styles.css (requires restart?)

@@ -7,6 +7,7 @@ savos = "/Users/thomasnieborowski/Desktop/SAVOS/"
 remote_img = 'public_html/sebartsvirtual/wp-content/uploads/img'
 
 mode = 'ADD' # ADD | TEST | BULK
+print('Processing Images in Mode: ' + mode)
 if mode == 'TEST':
     in_dir = "./in_img"
     out_dir = "./out_img"
@@ -36,7 +37,6 @@ ftp.cwd(remote_img)
 files = ftp.nlst()
 
 for f2 in files:
-    print(" f: "+f2)
     if f2 == '.' or f2 == '..':
         continue
     localf = os.path.join(in_dir, f2)
@@ -47,7 +47,6 @@ for f4 in files:
     if f4 == '.' or f4 == '..':
         continue
     ftp.delete(f4)
-    # was sendcmd('DELE "+f4)
 
 ftp.quit()
 
@@ -58,7 +57,7 @@ for oldfile in os.scandir(out_dir):
 
 for f4 in os.listdir(in_dir):
     org = os.path.join(in_dir, f4)
-    new_path = os.path.join(out_dir, f4)
+    new_path = os.path.join(out_dir, f4) # TODO append out_dir last
     if f4.endswith('.jpeg'):
         newpath = new_path.replace('.jpeg', '.jpg')
         im = Image.open(org)
@@ -85,6 +84,7 @@ for f4 in os.listdir(in_dir):
         continue
     im.thumbnail((IM_SIZE, IM_SIZE))
     im.save(newpath, quality=QUALITY)
-    print('CONVERTed '+org+' to '+newpath)
+    print('CONVERTed '+f4+' to '+newpath)
 
-print('END')
+print('Now upload precessed Images to Media Library:')
+print('Dashboard > Media > Add New > Select > ' + out_dir)

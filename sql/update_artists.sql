@@ -1,13 +1,15 @@
 -- After an artist has registered under the Registration form's "Update" menu option
 -- update all missing fields.
--- Do first for one artist named susan bradford:
--- Update brief_description with value of 'brief v2' for tom1 -- needs last name
--- (Implement either with sproc after character set fix or generate statements below from csv via Python.)
+-- Do first for one artist named @first @last:
+-- OLD - WAS: Update brief_description with value of 'brief v2' for tom1 -- needs last name
+-- NEW - IS: Update featured_artwork
+-- (Implement either with sproc or) Generate statements below from csv via Python.
+-- TODO: Set @postid once and reuse for all other fields
 
 -- Link given artist with artist's featured image
 SET @first = 'luann';
 SET @last = 'udell';
-SET @art_or_head = 'head'; -- TODO Repeat INSERT with art -> 'head' if supplied.
+SET @art_or_head = 'head'; -- TODO Do INSERT for headshot if exists in .
 
 INSERT INTO 4BS_postmeta (post_id, meta_key, meta_value) VALUES ( -- artist, 'featured_artwork', media image
     (SELECT t3.ID

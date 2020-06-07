@@ -52,7 +52,12 @@ Append to: wp-content/plugins/contact-form-7/includes/css/styles.css (requires r
  border: 20px solid #ddd;
 }
 ```
+#### 4.) To Display Products in Artist Profile
+Dashboard > Template > Artist Profile Pages > Elementor >
+Search = post > Drag-and-drop > Posts (widget) >
+Content > Query > Source = Products > Query ID = prodquery > Update
 
+This is used and required by 2.) above: has to match 'prodquery'
 
 ### Image File Format
 Headshot:

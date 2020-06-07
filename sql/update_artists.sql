@@ -46,7 +46,7 @@ SELECT @title;
 UPDATE 4BS_posts
 SET post_title = @title
 WHERE ID = @postid;
-
+/*
 SET @postid_img_art = (SELECT ID FROM 4BS_posts
 WHERE post_type = 'attachment'
 AND post_name LIKE CONCAT(@last_lower,'%')
@@ -76,7 +76,7 @@ UPDATE 4BS_postmeta
 SET meta_value = @postid_img_head
 WHERE meta_key = 'headshot'
 AND post_id = @postid;
-
+*/
 -- SELECT post_id FROM 4BS_postmeta WHERE meta_key = '_wp_attached_file'
 -- AND meta_value = (SELECT CONCAT( @last, '-', @first, '-art.jpg'));
 -- _thumbnail_id

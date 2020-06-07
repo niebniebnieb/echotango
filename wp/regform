@@ -68,8 +68,10 @@ The phone number you would like listed on your public profile. Leave blank if yo
 
 <strong> Physical Studio Address</strong>
 Please list the address where you will exhibit if in-person visits are possible.<strong> Note: </strong>Studio sharing is permitted for this program. If you are an Art at the Source artist who previously planned to share a studio this year, please confirm your existing arrangements with your host or guest, and then enter your shared studio address below. For more information or assistance with sharing a studio, please <strong><a href="mailto:openstudios@sebarts.org">contact us</a></strong>.
-<label>
-    [map physical_studio_address]</label>
+
+<label>Address   [text address]</label>
+<label>City      [text city]</label>
+<label>Zipcode   [text zipcode]</label>
 
 <label><strong> Open Year Round by Appointment </strong><strong style="color: red;">*</strong></label>
     [radio open_by_appointment "No" "Yes"]
@@ -122,7 +124,7 @@ Please select all of the potential online workshops you would be interested in a
 "Referral to a web designer"] </label>
 
 
-I agree to the terms and conditions of the 2020 SebArts Virtual Open Studios – Best of Both program. To review terms and conditions, please <strong><a href="https://sebartsvirtual.org/wp-content/uploads/SAVOS-General-Information-and-Guidelines.pdf" target="_blank">click here.</a></strong>
+I agree to the terms and conditions of the 2020 SebArts Virtual Open Studios â€“ Best of Both program. To review terms and conditions, please <strong><a href="https://sebartsvirtual.org/wp-content/uploads/SAVOS-General-Information-and-Guidelines.pdf" target="_blank">click here.</a></strong>
 
 <label><strong>Agreement to Guidelines </strong><strong style="color: red;">*</strong>
     [checkbox* agreement_to_guidelines "I Agree"] </label>

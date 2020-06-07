@@ -9,5 +9,5 @@ For your Featured Artwork Image, filename must be: <strong>lastname-firstname-ar
 For your Personal Photo, filename must be: <strong>lastname-firstname-head.png or .jpg</strong> … All lower case a-z only.
 
 Click <strong>[Select File]</strong>, then navigate to the file location on your device. Choose the file, then click <strong>[Upload File]</strong>. If you are providing both a Featured Artwork Image and a Personal Photo, you will use the same field for both of them.
-[wordpress_file_upload uploadpath="uploads/img" widths="filename:450px" uploadtitle=""]
+[wordpress_file_upload uploadpath="uploads/img" uploadtitle="" widths="filename:450px"]
 [cf7form cf7key="regform"]

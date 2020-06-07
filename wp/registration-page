@@ -1,13 +1,22 @@
 <strong>Profile Page Image Upload Instructions</strong>
 Please read the instructions on Page 4 of the General Information and Guidelines document before uploading your images. Your images <strong>must</strong> be named and formatted according to these guidelines <strong>before</strong> you upload them here. For the General Information and Guidelines, please <strong><a href="https://sebartsvirtual.org/wp-content/uploads/SAVOS-General-Information-and-Guidelines.pdf" target="_blank" rel="noopener noreferrer">click here.</a></strong>
 
-If you have already registered for Art at the Source or Art Trails for 2020, we will re-use most of the information you have already provided. In the image upload area below, you need only to provide a Personal Photo.
+If you have already registered for Art at the Source or Art Trails for 2020, you need only to provide a Personal Photo In the image upload area below
 
 If you have participated in Art at the Source or Art Trails in previous years, but have not already registered for 2020 <strong>OR</strong> If you have never participated in either program, please upload your Featured Artwork and Personal Photo.
 
 For your Featured Artwork Image, filename must be: <strong>lastname-firstname-art.png or .jpg</strong> … All lower case a-z only.
 For your Personal Photo, filename must be: <strong>lastname-firstname-head.png or .jpg</strong> … All lower case a-z only.
 
-Click <strong>[Select File]</strong>, then navigate to the file location on your device. Choose the file, then click <strong>[Upload File]</strong>. If you are providing both a Featured Artwork Image and a Personal Photo, you will use the same field for both of them.
+1.) Click <strong>[Select File]</strong>
+
+2.) Navigate to the file location on your device.
+
+3.) Choose the file,
+
+4.) Click <strong>[Upload File]</strong>.
+
+5.) If you are providing both a Featured Artwork Image and a Personal Photo, repeat steps 1.) to 4.) for both.
+
 [wordpress_file_upload uploadpath="uploads/img" uploadtitle="" widths="filename:450px"]
 [cf7form cf7key="regform"]

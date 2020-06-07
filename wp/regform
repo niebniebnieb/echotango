@@ -42,29 +42,9 @@ The email address you would like linked on your public profile. Leave blank if y
 <label>Artist Statement or Bio<strong style="color: red;">*</strong>
     [textarea* artist_statement] </label>
 
-[group detail]
-<label>Medium <strong style="color: red;">*</strong>
-    [select* medium include_blank "Ceramics" "Digital Art" "Drawing" "Fiber Arts" "Furniture" "Glass" "Jewelry" "Mixed Media" "Painting" "Photography" "Printmaking" "Sculpture" "Woodworking"] </label>
 
-<label>Brief Description<strong style="color: red;">*</strong> <em>(e.g. "Oil on canvas" or "Plein air watercolors, Sonoma landscapes")</em>
-    [text* brief_description] </label>
 
-<strong>Contact Information</strong>
-Please list a year-round address where you can be reached for your art business and for program communications, commission checks, etc. This will be published and remain on the website for collectors to contact you. If you do not wish to publish a mailing address, enter the address for private use only, and click Do Not Publish.
-<label>Mailing Address<strong style="color: red;">*</strong>
-    [text* mailing_address] </label>
 
-<label>Do Not Publish
-    [checkbox do_not_publish_mailing_address "Do Not Publish"] </label>
-
-Phone number you would like SebArts to use to contact you with information about the program.
-<label>Phone Number<strong style="color: red;">*</strong><em> (please enter as (111) 222-3333)</em>
-    [tel* phone_number minlength:14 maxlength:14 placeholder "(111) 222-3333"] </label>
-
-The phone number you would like listed on your public profile. Leave blank if you do not want to share a phone number.
-<label>Public Phone Number <em> (please enter as (111) 222-3333)</em>
-    [tel public_phone minlength:14 maxlength:14 placeholder "(111) 222-3333"] </label>
-[/group]
 
 <strong> Physical Studio Address</strong>
 Please list the address where you will exhibit if in-person visits are possible.<strong> Note: </strong>Studio sharing is permitted for this program. If you are an Art at the Source artist who previously planned to share a studio this year, please confirm your existing arrangements with your host or guest, and then enter your shared studio address below. For more information or assistance with sharing a studio, please <strong><a href="mailto:openstudios@sebarts.org">contact us</a></strong>.
@@ -122,6 +102,28 @@ Please select all of the potential online workshops you would be interested in a
 "Making a New Website"
 "Improving an Existing Website"
 "Referral to a web designer"] </label>
+
+<label>Medium <strong style="color: red;">*</strong>
+    [select* medium include_blank "Ceramics" "Digital Art" "Drawing" "Fiber Arts" "Furniture" "Glass" "Jewelry" "Mixed Media" "Painting" "Photography" "Printmaking" "Sculpture" "Woodworking"] </label>
+
+<label>Brief Description<strong style="color: red;">*</strong> <em>(e.g. "Oil on canvas" or "Plein air watercolors, Sonoma landscapes")</em>
+    [text* brief_description] </label>
+
+<strong>Contact Information</strong>
+Please list a year-round address where you can be reached for your art business and for program communications, commission checks, etc. This will be published and remain on the website for collectors to contact you. If you do not wish to publish a mailing address, enter the address for private use only, and click Do Not Publish.
+<label>Mailing Address<strong style="color: red;">*</strong>
+    [text* mailing_address] </label>
+
+<label>Do Not Publish
+    [checkbox do_not_publish_mailing_address "Do Not Publish"] </label>
+
+Phone number you would like SebArts to use to contact you with information about the program.
+<label>Phone Number<strong style="color: red;">*</strong><em> (please enter as (111) 222-3333)</em>
+    [tel* phone_number minlength:14 maxlength:14 placeholder "(111) 222-3333"] </label>
+
+The phone number you would like listed on your public profile. Leave blank if you do not want to share a phone number.
+<label>Public Phone Number <em> (please enter as (111) 222-3333)</em>
+    [tel public_phone minlength:14 maxlength:14 placeholder "(111) 222-3333"] </label>
 
 
 I agree to the terms and conditions of the 2020 SebArts Virtual Open Studios â€“ Best of Both program. To review terms and conditions, please <strong><a href="https://sebartsvirtual.org/wp-content/uploads/SAVOS-General-Information-and-Guidelines.pdf" target="_blank">click here.</a></strong>
